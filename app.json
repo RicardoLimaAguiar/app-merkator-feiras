@@ -3,6 +3,7 @@
     "name": "app-merkator-feiras",
     "slug": "app-merkator-feiras",
     "description": "Aplicativo Merkator Feiras",
+    "owner": "ricardoaguiar",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
