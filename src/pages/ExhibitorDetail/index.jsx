@@ -279,7 +279,7 @@ const ExhibitorDetail = () => {
                   )}
                   {loadingClient &&
                     productClient.map((value) => (
-                      <BoxProduto key={value.id}>
+                      <BoxProduto key={'BoxProduto' + value.id}>
                         <TextProduto>{value.name}</TextProduto>
                       </BoxProduto>
                     ))}

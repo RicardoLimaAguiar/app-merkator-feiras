@@ -10,7 +10,14 @@
     "extra": {
       "oneSignalAppId": "695db98b-cc06-473a-b444-fff34caa6bc9"
     },
-    "plugins": ["onesignal-expo-plugin"],
+    "plugins": [
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "development"
+        }
+      ]
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",

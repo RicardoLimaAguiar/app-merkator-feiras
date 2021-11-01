@@ -52,10 +52,6 @@ const Home = () => {
     handleDataConfig();
     fecthAllNews();
     handleAppDataConfig();
-    // OneSignal.init("695db98b-cc06-473a-b444-fff34caa6bc9");
-    // OneSignal.addEventListener("received", this.onReceived);
-    // OneSignal.addEventListener("opened", this.onOpened);
-    // OneSignal.addEventListener("ids", this.onIds);
   }, []);
 
   const fecthAllNews = async () => {
@@ -169,6 +165,7 @@ const Home = () => {
         </BannerCredenciamento>
         {isLoadingRedes &&
             <FlatList
+            keyExtractor={(item) => String(item.id)}
             data={bannerSuperior}
             renderItem={({ item }) => (
               <BorderlessButton onPress={() => goToLinkBanner(item.url_superior_banner)}>
@@ -254,6 +251,7 @@ const Home = () => {
 
         {isLoadingRedes &&
           <FlatList
+          keyExtractor={(item) => String(item.id)}
           data={banner}
           renderItem={({ item }) => (
             <BoxIconEMerkator onPress={() => goToLinkBanner(item.url_banner)} activeOpacity={0.7} >

@@ -92,8 +92,8 @@ export function HeaderApp({ showButtons }) {
       </ContainerLogoEvento>
       <ContainerIconRedesHeader>
         <RowIconRedes>
-          {isLoadingRedes && redes.map((data) => (
-              <BoxIconHeadRedes onPress={() => goToRedesSociais(data.url_rede_social)} activeOpacity={0.7}>
+          {isLoadingRedes && redes.map((data, index) => (
+              <BoxIconHeadRedes key={'BoxIconHeadRedes' + index} onPress={() => goToRedesSociais(data.url_rede_social)} activeOpacity={0.7}>
                 <FontIcon name={data.icone_rede_social} size={35} color="#ffffff" />
               </BoxIconHeadRedes>
           ))}
