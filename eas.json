@@ -1,0 +1,14 @@
+{
+  "cli": {
+    "version": ">= 0.34.0"
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "ricardo.ti@w3bs.com.br",
+        "ascAppId": "1487335018",
+        "appleTeamId": "4DTUG4685F"
+      }
+    }
+  }
+}
