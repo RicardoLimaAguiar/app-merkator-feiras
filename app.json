@@ -4,7 +4,7 @@
     "slug": "app-merkator-feiras",
     "description": "Aplicativo Merkator Feiras",
     "owner": "ricardoaguiar",
-    "version": "1.0.8",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "extra": {
@@ -30,7 +30,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "org.reactjs.native.example.AppRealmDb",
-      "buildNumber": "1.0.8"
+      "buildNumber": "15"
     },
     "android": {
       "adaptiveIcon": {
