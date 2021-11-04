@@ -246,7 +246,9 @@ const Home = () => {
         </RowIcon>
         
         <BoxEMerkatorTalks>
-          <ImageEmerkatorTalks source={{uri: config.image_topo_banner}} />
+          <BorderlessButton onPress={() => goToLinkBanner('https://www.feirazerograu.com.br/pt')}>
+            <ImageEmerkatorTalks source={{uri: config.image_topo_banner}} />
+          </BorderlessButton>
         </BoxEMerkatorTalks>
 
         {isLoadingRedes &&
