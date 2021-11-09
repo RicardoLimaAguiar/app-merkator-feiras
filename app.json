@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "app-merkator-feiras",
+    "name": "Merkator Feiras e Eventos",
     "slug": "app-merkator-feiras",
     "description": "Aplicativo Merkator Feiras",
     "owner": "ricardoaguiar",
-    "version": "2.0.0",
+    "version": "2.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "extra": {
@@ -30,7 +30,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "org.reactjs.native.example.AppRealmDb",
-      "buildNumber": "15"
+      "buildNumber": "17"
     },
     "android": {
       "adaptiveIcon": {
