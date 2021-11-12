@@ -16,7 +16,7 @@ if (__DEV__) {
 
 import Routes from "./src/routes";
 import ThemeProvider from "./src/providers/ThemeProvider";
-// import { OneSignalProvider } from "./src/providers/OneSignalProvider";
+import { OneSignalProvider } from "./src/providers/OneSignalProvider";
 
 function App() {
 
@@ -48,9 +48,9 @@ function App() {
   return (
     <ThemeProvider>
       <NavigationContainer>
-        {/* <OneSignalProvider> */}
+        <OneSignalProvider>
           <Routes />
-        {/* </OneSignalProvider> */}
+        </OneSignalProvider>
       </NavigationContainer>
     </ThemeProvider>
   );

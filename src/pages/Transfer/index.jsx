@@ -65,8 +65,7 @@ const Transfer = () => {
       
       <ContainerScrollView>
         <ContainerTextBgWhite>
-          <SectionTitle>O Traslado do Aeroporto Internacional Salgado Filho, em Porto Alegre - Rio Grande do Sul, até os hotéis credenciados será realizado através do transporte oficial da Zero Grau, operacionalizado pela empresa Planalto com objetivo de oferecer maior comodidade, conforto e segurança aos nossos visitantes.{'\n\n'}A equipe da Merkator juntamente com a equipe Planalto, estará no terminal de desembarque, coordenando as saídas dos traslados até os respectivos hotéis.{'\n'}</SectionTitle>
-          
+          <SectionTitle>O Traslado do Aeroporto Internacional Salgado Filho, em Porto Alegre - Rio Grande do Sul, até os hotéis credenciados será realizado através do transporte oficial da Zero Grau, operacionalizado pela empresa Planalto com objetivo de oferecer maior comodidade, conforto e segurança aos nossos visitantes.{'\n\n'}A equipe da Merkator juntamente com a equipe Planalto, estará no terminal de desembarque, coordenando as saídas dos traslados até os respectivos hotéis.{'\n\n'}Plantão de atendimento:{'\n'}+55 53 99712-2792</SectionTitle>
           <ImageTransporteOficial>
             <TextTrasnporteOficial>Transporte oficial</TextTrasnporteOficial>
             <LogoTransporteOficial 
@@ -186,21 +185,6 @@ const Transfer = () => {
             <TextButtonTraslado>Compre sua pasagem aqui</TextButtonTraslado>
           </ButtonDestaqueTraslado>
         </ContainerTextBgWhite>
-        {/* {isLoading && <LoadingActivityIndicator />}
-        {!isLoading && (
-          <ContainerTextBgWhite>
-            {traslado.length > 0 && (
-              <WebView
-                source={{ html: String(traslado) }}
-                originWhitelist={["*"]}
-                style={styles}
-              />
-            )}
-            {traslado.length === 0 && (
-              <SectionTitle>Em breve maiores informações</SectionTitle>
-            )}
-          </ContainerTextBgWhite>
-        )} */}
       </ContainerScrollView>
     </ContainerGradiente>
   );

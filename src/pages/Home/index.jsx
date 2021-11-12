@@ -8,7 +8,6 @@ import {
   MaterialIcons as Icon, 
   FontAwesome5 as FontIcon } 
 from "@expo/vector-icons";
-// import OneSignal from "react-native-onesignal";
 
 import api from "../../services/api";
 import LogoZeroSVG from "../../assets/images/logo-zero-grau.svg";
