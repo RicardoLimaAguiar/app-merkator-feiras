@@ -245,7 +245,7 @@ const Home = () => {
         </RowIcon>
         
         <BoxEMerkatorTalks>
-          <BorderlessButton onPress={() => goToLinkBanner('https://www.feirazerograu.com.br/pt')}>
+          <BorderlessButton onPress={() => goToLinkBanner('https://emerkator.com.br/')}>
             <ImageEmerkatorTalks source={{uri: config.image_topo_banner}} />
           </BorderlessButton>
         </BoxEMerkatorTalks>
