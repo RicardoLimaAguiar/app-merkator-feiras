@@ -9,6 +9,7 @@ import {
 } from "@expo/vector-icons";
 
 import LogoZeroSVG from "../../assets/images/logo-zero-grau.svg";
+import LogoSiccSVG from "../../assets/images/logo-sicc.svg";
 import ListRedes from '../../components/ListRedesSocias';
 
 import {
@@ -67,7 +68,7 @@ export function HeaderApp({ showButtons }) {
               <Icon
                 name={"chevron-left"}
                 size={28}
-                color="#FFFFFF"
+                color="#a3156d"
               />
             </BorderlessButton>
           }
@@ -78,14 +79,14 @@ export function HeaderApp({ showButtons }) {
             <Icon
               name={"home"}
               size={28}
-              color="#FFFFFF"
+              color="#a3156d"
             />
             </BorderlessButton>
           }
         </BoxButtonHeader>
       </ContainerNavigationHead>
       <ContainerLogoEvento>
-        <LogoZeroSVG 
+        <LogoSiccSVG 
           width={200}
           height={100}
         />
@@ -94,7 +95,7 @@ export function HeaderApp({ showButtons }) {
         <RowIconRedes>
           {isLoadingRedes && redes.map((data, index) => (
               <BoxIconHeadRedes key={'BoxIconHeadRedes' + index} onPress={() => goToRedesSociais(data.url_rede_social)} activeOpacity={0.7}>
-                <FontIcon name={data.icone_rede_social} size={35} color="#ffffff" />
+                <FontIcon name={data.icone_rede_social} size={35} color="#d01b8b" />
               </BoxIconHeadRedes>
           ))}
         </RowIconRedes>

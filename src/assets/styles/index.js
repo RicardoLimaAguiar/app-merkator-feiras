@@ -94,8 +94,8 @@ export const RowIconRedes = styled.View`
 export const BoxIcon = styled.TouchableOpacity.attrs((props) => ({
   activeOpacity: 0.7,
 }))`
-  background: ${({ theme }) => theme.colors.gradient.first};
-  color: #ffffff;
+  background: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.secondary};
   align-items: center;
   border-radius: 5px;
   padding: 10px;
@@ -138,7 +138,7 @@ export const BoxIconEMerkator = styled.TouchableOpacity.attrs((props) => ({
 `;
 
 export const BoxText = styled.Text`
-  color: #ffffff;
+  color: ${({ theme }) => theme.colors.borderBotaoEMerkator};
   margin-top: 5px;
   font-size: 12px;
   font-family: ${({ theme }) => theme.fonts.roboto300};
@@ -208,16 +208,17 @@ export const FormSearch = styled.View`
 `;
 
 export const InputSearch = styled.TextInput.attrs({
-  placeholderTextColor: "#999",
+  placeholderTextColor: "#FFFFFF",
 })`
   flex: 1;
   padding: 12px 15px;
   border-radius: 4px;
   font-size: 16px;
   color: #000;
-  background: #ffff;
+  background: ${({ theme }) => theme.colors.secondary};
   text-transform: capitalize;
   font-family: ${({ theme }) => theme.fonts.roboto400};
+  margin: 0 15px;
 `;
 
 export const List = styled.FlatList`
@@ -227,7 +228,7 @@ export const List = styled.FlatList`
 export const ContainerEventDetail = styled.View`
   flex: 1;
   margin: 0px 15px 20px 15px;
-  background: #ffffff;
+  background: ${({ theme }) => theme.colors.secondary};
   border-radius: 8px;
   padding-bottom: 20px;
 `;
@@ -244,9 +245,19 @@ export const ContainerText = styled.View`
 
 export const TitleExhibitor = styled.Text`
   font-size: 18px;
-  color: #1c1c1c;
+  color: ${({ theme }) => theme.colors.borderBotaoEMerkator};
   margin-bottom: 5px;
   margin-top: 10px;
+  text-transform: uppercase;
+  font-family: ${({ theme }) => theme.fonts.roboto700};
+`;
+
+export const TitleNewsHome = styled.Text`
+  font-size: 24px;
+  color: ${({theme}) => theme.colors.primary};
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
   text-transform: uppercase;
   font-family: ${({ theme }) => theme.fonts.roboto700};
 `;
@@ -274,13 +285,13 @@ export const BoxMarca = styled.View`
 `;
 
 export const TextMarca = styled.Text`
-  color: #ffffff;
+  color: ${({ theme }) => theme.colors.secondary};
   text-align: center;
   font-family: ${({ theme }) => theme.fonts.roboto400};
 `;
 
 export const ContainerDescription = styled.Text`
-  color: #000000;
+  color: ${({ theme }) => theme.colors.borderBotaoEMerkator};
   font-size: 14px;
   margin-bottom: 20px;
   font-family: ${({ theme }) => theme.fonts.roboto500};
@@ -289,7 +300,7 @@ export const ContainerDescription = styled.Text`
 `;
 
 export const SectionTitle = styled.Text`
-  color: #000000;
+  color: ${({ theme }) => theme.colors.secondary};
   justify-content: flex-start;
   margin-bottom: 10px;
   font-size: 14px;
@@ -318,7 +329,7 @@ export const BoxProduto = styled.View`
 `;
 
 export const TextProduto = styled.Text`
-  color: #000000;
+  color: ${({ theme }) => theme.colors.borderBotaoEMerkator};
   justify-content: flex-start;
   margin-bottom: 8px;
   font-size: 12px;
@@ -358,7 +369,7 @@ export const ButtonExhibitor = styled.TouchableOpacity.attrs((props) => ({
   flex: 1;
   height: 40px;
   margin: 0 5px;
-  background: #003f78;
+  background: #290d7c;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
@@ -533,9 +544,9 @@ export const TextContentNews = styled.Text`
 `;
 
 export const ButtonDestaqueTraslado = styled.TouchableOpacity.attrs((props) => ({
-  activeOpacity: 0.7,
+  activeOpacity: 1,
 }))`
-  background-color: ${({ theme }) => theme.colors.gradient.first};
+  background-color: ${({ theme }) => theme.colors.secondary};
   padding: 15px 0px;
   align-items: center;
   justify-content: center;
@@ -544,7 +555,7 @@ export const ButtonDestaqueTraslado = styled.TouchableOpacity.attrs((props) => (
 `;
 
 export const ButtonTraslado = styled.View`
-  background-color: ${({ theme }) => theme.colors.gradient.seccond};
+  background-color: ${({ theme }) => theme.colors.primary};
   padding: 15px 0px;
   align-items: center;
   justify-content: center;
@@ -553,7 +564,7 @@ export const ButtonTraslado = styled.View`
 `;
 
 export const TextButtonTraslado = styled.Text`
-  color: ${({ theme }) => theme.colors.textInBg};
+  color: ${({ theme }) => theme.colors.borderBotaoEMerkator};
   font-family: ${({ theme }) => theme.fonts.roboto700};
   font-size: 18px;
   text-align: center;
@@ -631,6 +642,18 @@ export const ContainerGradienteNews = styled(LinearGradient).attrs((props) => ({
   colors: [
     props.theme.colors.gradient.first,
     props.theme.colors.gradient.seccond,
+  ],
+  start: { x: 0, y: 0 },
+  end: { x: 0, y: 1 },
+}))`
+  flex: 1;
+  padding-top: ${Constants.statusBarHeight};
+`;
+
+export const ContainerGradientePreload = styled(LinearGradient).attrs((props) => ({
+  colors: [
+    props.theme.colors.primary,
+    props.theme.colors.secondary,
   ],
   start: { x: 0, y: 0 },
   end: { x: 0, y: 1 },

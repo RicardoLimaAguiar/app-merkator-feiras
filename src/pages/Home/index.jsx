@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
-import { StatusBar, Linking, FlatList} from "react-native";
+import { StatusBar, Linking, FlatList, Text} from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { BorderlessButton } from "react-native-gesture-handler";
 
@@ -28,6 +28,7 @@ import {
   BoxEMerkatorTalks,
   ImageEmerkatorTalks,
   ImageEMerkatorIcon,
+  TitleNewsHome,
 } from "../../assets/styles";
 
 import LoadingActivityIndicator from "../../components/Loading";
@@ -117,13 +118,13 @@ const Home = () => {
   };
 
   const goToCredenciamento = () => {
-    Linking.openURL("https://merkator.bcseventos.inf.br/visitantes/formularios.php?id_edicao=126").catch((err) =>
+    Linking.openURL("#").catch((err) =>
       console.error("Couldn't load page", err)
     );
   };
 
   const goToHospedagem = () => {
-    Linking.openURL("https://merkatorhospedagem.bcseventos.inf.br/hospedagem/solicitacaoweb/login.php?id_edicao=27").catch(
+    Linking.openURL("https://merkatorhospedagem.bcseventos.inf.br/hospedagem/solicitacaoweb/login.php?id_edicao=28").catch(
       (err) => console.error("Couldn't load page", err)
     );
   };
@@ -152,16 +153,17 @@ const Home = () => {
         {isLoadingRedes && 
           <HeaderApp showButtons={false} dataConfig={config}/>
         }
+
+        {config.image_evento && 
         <BannerCredenciamento>
-          <BannerImage
-            source={{
-              uri:
-                "https://paineldoexpositor.com.br/uploads/evento/" +
-                evento.imagem,
-            }}
-            resizeMode={"center"}
-          />
-        </BannerCredenciamento>
+        <BannerImage
+          source={{
+            uri: config.image_evento,
+          }}
+          resizeMode={"center"}
+        />
+      </BannerCredenciamento>}
+        
         {isLoadingRedes &&
             <FlatList
             keyExtractor={(item) => String(item.id)}
@@ -177,7 +179,7 @@ const Home = () => {
               </BorderlessButton>
             )}
             numColumns={1}
-            keyExtractor={(item, index) => index}
+            //keyExtractor={(item, index) => index}
             />
         }
         <RowIcon>
@@ -233,7 +235,6 @@ const Home = () => {
             <BoxText>Minhas anotações</BoxText>
           </BoxIcon>
         </RowIcon>
-
         <RowIcon>
           <BoxIcon
             onPress={goToPlantaBaixa}
@@ -244,30 +245,31 @@ const Home = () => {
           </BoxIcon>
         </RowIcon>
         
-        <BoxEMerkatorTalks>
+        {/* <BoxEMerkatorTalks>
           <BorderlessButton onPress={() => goToLinkBanner('https://emerkator.com.br/')}>
             <ImageEmerkatorTalks source={{uri: config.image_topo_banner}} />
           </BorderlessButton>
-        </BoxEMerkatorTalks>
-
+        </BoxEMerkatorTalks> */}
+  
         {isLoadingRedes &&
-          <FlatList
-          keyExtractor={(item) => String(item.id)}
-          data={banner}
-          renderItem={({ item }) => (
-            <BoxIconEMerkator onPress={() => goToLinkBanner(item.url_banner)} activeOpacity={0.7} >
-              <ImageEMerkatorIcon 
-                source={{uri: item.image_banner}}
-              />
-            </BoxIconEMerkator>
-          )}
-          numColumns={2}
-          keyExtractor={(item, index) => index}
-          />
+            
+            <FlatList
+            keyExtractor={(item) => String(item.id)}
+            data={banner}
+            renderItem={({ item }) => (
+              <BoxIconEMerkator onPress={() => goToLinkBanner(item.url_banner)} activeOpacity={0.7} >
+                <ImageEMerkatorIcon 
+                  source={{uri: item.image_banner}}
+                />
+              </BoxIconEMerkator>
+            )}
+            numColumns={2}
+            />
         }
         <ListNewsHeader />
         {!isLoading ? <LoadingActivityIndicator/> : 
           <>
+            <TitleNewsHome>Notícias</TitleNewsHome>
             <List
               keyboardShouldPersistTaps="handled"
               data={news}

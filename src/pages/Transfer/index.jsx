@@ -49,7 +49,7 @@ const Transfer = () => {
 
   function handlePurchaseTicket(){
     Linking.openURL(
-      'https://api.whatsapp.com/send?phone=5553997122792&text=Desejo%20adquirir%20traslado'
+      'https://api.whatsapp.com/send?phone=5551996515213&text=Olá Desejo quero traslado para SICC 2022'
     );
   }
 
@@ -65,7 +65,7 @@ const Transfer = () => {
       
       <ContainerScrollView>
         <ContainerTextBgWhite>
-          <SectionTitle>O Traslado do Aeroporto Internacional Salgado Filho, em Porto Alegre - Rio Grande do Sul, até os hotéis credenciados será realizado através do transporte oficial da Zero Grau, operacionalizado pela empresa Planalto com objetivo de oferecer maior comodidade, conforto e segurança aos nossos visitantes.{'\n\n'}A equipe da Merkator juntamente com a equipe Planalto, estará no terminal de desembarque, coordenando as saídas dos traslados até os respectivos hotéis.{'\n\n'}Plantão de atendimento:{'\n'}+55 53 99712-2792</SectionTitle>
+          <SectionTitle>O Traslado do Aeroporto Internacional Salgado Filho, em Porto Alegre - Rio Grande do Sul, até os hotéis credenciados será realizado através do transporte oficial do SICC, operacionalizado pela empresa Planalto com objetivo de oferecer maior comodidade, conforto e segurança aos nossos visitantes.{'\n\n'}A equipe da Merkator juntamente com a equipe Planalto, estará no terminal de desembarque, coordenando as saídas dos traslados até os respectivos hotéis.{'\n\n'}Plantão de atendimento:{'\n'}+55 53 99712-2792</SectionTitle>
           <ImageTransporteOficial>
             <TextTrasnporteOficial>Transporte oficial</TextTrasnporteOficial>
             <LogoTransporteOficial 
@@ -79,52 +79,47 @@ const Transfer = () => {
           </ButtonDestaqueTraslado>
 
           <TitleSectionTraslado>
-            <TextTitleTraslado>Domingo 14/11</TextTitleTraslado>
+            <TextTitleTraslado>Domingo 22/05</TextTitleTraslado>
           </TitleSectionTraslado>
           <ButtonTraslado>
             <TextButtonTraslado>POA {'>'} GRAMADO</TextButtonTraslado>
           </ButtonTraslado>
-          <SectionTitle>Aeroporto Salgado Filho para Gramado/Canela{'\n\n'}(Desembarque nos hotéis){'\n\n'}8h | 10h | 11h30min | 13h | 14h | 15h30min | 17h | 18h30min | 19h30min | 20h30min | 22h</SectionTitle>
+          <SectionTitle>Saída do Aeroporto de Porto Alegre até os Hotéis conveniados da feira.{'\n\n'}(Desembarque nos hotéis){'\n\n'}8h | 10h | 12h | 14h | 16h | 18h | 20h | 22h | 00h{'\n\n'}* Os horários previstos acima podem sofrer alterações conforme necessidade e demanda.</SectionTitle>
 
           <TitleSectionTraslado>
-            <TextTitleTraslado>Segunda-feira 15/11</TextTitleTraslado>
+            <TextTitleTraslado>Segunda-feira 23/05</TextTitleTraslado>
           </TitleSectionTraslado>
           <ButtonTraslado>
             <TextButtonTraslado>POA {'>'} GRAMADO</TextButtonTraslado>
           </ButtonTraslado>
-          <SectionTitle>Aeroporto Salgado Filho para Gramado{'\n\n'}(Desembarque na feira){'\n\n'}07h30min | 09h30min | 10h30min | 11h30min | 13h | 14h | 15h{'\n\n'}Aeroporto Salgado Filho para Gramado/Canela{'\n\n'}(Desembarque nos hotéis){'\n\n'}16h | 17h | 19h | 18h30min | 20h | 22h30min</SectionTitle>
+          <SectionTitle>Saída do Aeroporto de Porto Alegre até a feira.{'\n\n'}8h | 10h | 12h | 14 h | 16 h | 18h | 20h | 22h | 00h{'\n\n'} Os horários previstos acima podem sofrer alterações conforme necessidade e demanda.</SectionTitle>
         
           <TitleSectionTraslado>
-            <TextTitleTraslado>Terça-feira 16/11</TextTitleTraslado>
+            <TextTitleTraslado>Terça-feira 24/05</TextTitleTraslado>
           </TitleSectionTraslado>
           <ButtonTraslado>
             <TextButtonTraslado>POA {'>'} GRAMADO</TextButtonTraslado>
           </ButtonTraslado>
-          <SectionTitle>Aeroporto Salgado Filho para Gramado{'\n\n'}(Desembarque na feira){'\n\n'}8h30min</SectionTitle>
+          <SectionTitle>Saída do Aeroporto de Porto Alegre até a feira.{'\n\n'}9h{'\n\n'}* Os horários previstos acima podem sofrer alterações conforme necessidade e demanda.</SectionTitle>
           <ButtonTraslado>
             <TextButtonTraslado>GRAMADO {'>'} POA</TextButtonTraslado>
           </ButtonTraslado>
-          <SectionTitle>Gramado para Aeroporto Salgado Filho{'\n\n'}(Embarque na feira){'\n\n'}8h30min{'\n\n'}Todos os horários de retorno devem ser agendados previamente nos balcões de traslado oficial, na feira.</SectionTitle>
+          <SectionTitle>Gramado para Aeroporto Salgado Filho (Embarque na feira){'\n\n'}14h:30min{'\n\n'}É OBRIGATÓRIO o comparecimento do cliente no estande da Equipe do traslado para confirmar / ou agendar no horário do traslado de Gramado/Canela para Porto Alegre.Para mais informações sobre o traslado e compra antecipada entre em contato pelo número: (51) 99651-5213, Com Catherine.{'\n\n'}* Os horários previstos acima podem sofrer alterações conforme necessidade e demanda.</SectionTitle>
         
           <TitleSectionTraslado>
-            <TextTitleTraslado>Quarta-feira 17/11</TextTitleTraslado>
+            <TextTitleTraslado>Quarta-feira 25/05</TextTitleTraslado>
           </TitleSectionTraslado>
           <ButtonTraslado>
             <TextButtonTraslado>POA {'>'} GRAMADO</TextButtonTraslado>
           </ButtonTraslado>
-          <SectionTitle>Gramado/Canela para Aeroporto Salgado Filho{'\n\n'}(Embarque nos hotéis){'\n\n'}04h | 06h{'\n\n'}Todos os horários de retorno devem ser agendados previamente nos balcões de traslado oficial, na feira.</SectionTitle>
+          <SectionTitle>Gramado para Aeroporto Salgado Filho (Embarque na feira).{'\n\n'}10h | 12h | 14h | 16h{'\n\n'}É OBRIGATÓRIO o comparecimento do cliente no estande da Equipe do traslado para confirmar / ou agendar no horário do traslado de Gramado/Canela para Porto Alegre.Para mais informações sobre o traslado e compra antecipada entre em contato pelo número: (51) 99651-5213, Com Catherine.{'\n\n'}* Os horários previstos acima podem sofrer alterações conforme necessidade e demanda.</SectionTitle>
+          <TitleSectionTraslado>
+            <TextTitleTraslado>Quinta-feira 26/05</TextTitleTraslado>
+          </TitleSectionTraslado>
           <ButtonTraslado>
             <TextButtonTraslado>GRAMADO {'>'} POA</TextButtonTraslado>
           </ButtonTraslado>
-          <SectionTitle>Gramado/Canela para Aeroporto Salgado Filho{'\n\n'}(Embarque na feira){'\n\n'}10h | 11h30min | 13h | 14h | 15h30min{'\n\n'}Todos os horários de retorno devem ser agendados previamente nos balcões de traslado oficial, na feira.</SectionTitle>
-        
-          <TitleSectionTraslado>
-            <TextTitleTraslado>Quinta-feira 18/11</TextTitleTraslado>
-          </TitleSectionTraslado>
-          <ButtonTraslado>
-            <TextButtonTraslado>POA {'>'} GRAMADO</TextButtonTraslado>
-          </ButtonTraslado>
-          <SectionTitle>Gramado/Canela para Aeroporto Salgado Filho{'\n\n'}(Embarque nos hotéis){'\n\n'}04h30min | 06h30min | 08h | 10h | 12h | 14h{'\n\n'}Todos os horários de retorno devem ser agendados previamente nos balcões de traslado oficial, na feira.</SectionTitle>
+          <SectionTitle>Gramado para Aeroporto Salgado Filho (Embarque nos hotéis){'\n\n'}04h | 06h| 08h | 10h | 12h | 14h{'\n\n'}É OBRIGATÓRIO o comparecimento do cliente no estande da Equipe do traslado para confirmar / ou agendar no horário do traslado de Gramado/Canela para Porto Alegre.Para mais informações sobre o traslado e compra antecipada entre em contato pelo número: (51) 99651-5213, Com Catherine.{'\n\n'}* Os horários previstos acima podem sofrer alterações conforme necessidade e demanda.</SectionTitle>
         
           <TitleSectionTraslado>
             <TextTitleTraslado>Valores</TextTitleTraslado>
@@ -138,7 +133,7 @@ const Transfer = () => {
               />
             </BoxContainerIcon>
             <TextValores>Aeroporto (POA) para Gramado/Canela ou Gramado/Canela para Aeroporto (POA)</TextValores>
-            <TextButtonTraslado>R$ 80,00</TextButtonTraslado>
+            <TextButtonTraslado>R$ 90,00</TextButtonTraslado>
             <TextValores style={{marginTop:0}}>por pessoa</TextValores>
           </ButtonTraslado>
 
@@ -151,7 +146,7 @@ const Transfer = () => {
               />
             </BoxContainerIcon>
             <TextValores>Aeroporto (POA) para Gramado/Canela e Gramado/Canela para Aeroporto (POA)</TextValores>
-            <TextButtonTraslado>R$ 140,00</TextButtonTraslado>
+            <TextButtonTraslado>R$ 160,00</TextButtonTraslado>
             <TextValores style={{marginTop:0}}>por pessoa</TextValores>
           </ButtonTraslado>
 
@@ -163,12 +158,12 @@ const Transfer = () => {
                 height={100}
               />
             </BoxContainerIcon>
-            <TextValores>Hotel para feira {'\n'}(dia avulso)</TextValores>
-            <TextButtonTraslado>R$ 10,00</TextButtonTraslado>
+            <TextValores>Hotel credenciado para Serra Park e Serra Park para hotel credenciado) Ticket Avulso (um único dia)</TextValores>
+            <TextButtonTraslado>R$ 30,00</TextButtonTraslado>
             <TextValores style={{marginTop:0}}>por pessoa</TextValores>
           </ButtonTraslado>
 
-          <ButtonTraslado>
+          {/* <ButtonTraslado>
             <TextButtonTraslado>COMBO FEIRA</TextButtonTraslado>
             <BoxContainerIcon>
               <IconBussTowerTraslado 
@@ -179,7 +174,7 @@ const Transfer = () => {
             <TextValores>Hotel para feira {'\n'}(todos os dias do evento)</TextValores>
             <TextButtonTraslado>R$ 20,00</TextButtonTraslado>
             <TextValores style={{marginTop:0}}>por pessoa</TextValores>
-          </ButtonTraslado>
+          </ButtonTraslado> */}
 
           <ButtonDestaqueTraslado onPress={() => handlePurchaseTicket()}>
             <TextButtonTraslado>Compre sua pasagem aqui</TextButtonTraslado>

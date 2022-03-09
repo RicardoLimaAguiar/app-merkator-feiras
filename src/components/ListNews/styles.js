@@ -3,7 +3,7 @@ import styled from "styled-components/native";
 export const Container = styled.TouchableOpacity.attrs((props) => ({
   activeOpacity: 0.7,
 }))`
-  background: ${({ theme }) => theme.colors.gradient.first};
+  background: ${({ theme }) => theme.colors.primary};
   border-radius: 8px;
   margin-right: 23px;
   margin-left: 23px;
