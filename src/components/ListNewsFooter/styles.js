@@ -9,7 +9,7 @@ export const Container = styled.TouchableOpacity.attrs((props) => ({
   border-radius: 3px;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.gradient.first};
+  background-color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const TextTitle = styled.Text`

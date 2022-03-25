@@ -67,6 +67,15 @@ export const BannerImage = styled.Image`
   height: auto;
 `;
 
+export const BannerImageBackground = styled.ImageBackground`
+  flex: 1;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 20px;
+`
+
 export const RowIcon = styled.View`
   flex: 1;
   flex-direction: row;
@@ -422,18 +431,20 @@ export const ButtonCloseModal = styled.TouchableOpacity.attrs((props) => ({
   justify-content: center;
   align-items: center;
   margin-right: 25px;
-  background: #fff;
+  background: ${({ theme }) => theme.colors.secondary};
   border-radius: 4px;
   padding: 5px;
   flex: 1px;
   width: 100px;
+  line-height: 0px;
   height: 40px;
+  color: ${({ theme }) => theme.colors.textInBg};
 `;
 
 export const LabelButtonClose = styled.Text`
   flex: 1;
   font-size: 14px;
-  color: #003f78;
+  color: ${({ theme }) => theme.colors.textInBg};
   justify-content: center;
   align-items: center;
   font-family: ${({ theme }) => theme.fonts.roboto700};
@@ -468,7 +479,7 @@ export const Input = styled.TextInput.attrs({
 export const Submit = styled.TouchableOpacity.attrs((props) => ({
   activeOpacity: 0.7,
 }))`
-  background: #003f78;
+  background: ${({ theme }) => theme.colors.secondary};
   justify-content: center;
   align-items: center;
   border-radius: 4px;

@@ -58,7 +58,7 @@ const Transfer = () => {
       <StatusBar
         backgroundColor="transparent"
         translucent={true}
-        barStyle="light-content"
+        barStyle="dark-content"
       />
 
       <HeaderApp showButtons={true}/>

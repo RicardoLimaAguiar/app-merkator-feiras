@@ -29,6 +29,7 @@ import {
   ImageEmerkatorTalks,
   ImageEMerkatorIcon,
   TitleNewsHome,
+  BannerImageBackground,
 } from "../../assets/styles";
 
 import LoadingActivityIndicator from "../../components/Loading";
@@ -136,18 +137,17 @@ const Home = () => {
   }
 
   const goToPlantaBaixa = () => {
-    Linking.openURL("https://paineldoexpositor.com.br/uploads/media/media_618c39911336f0_25980158.pdf").catch((err) =>
+    Linking.openURL("http://paineldoexpositor.com.br/uploads/media/media_623a4636422de5_28933725.pdf").catch((err) =>
       console.error("Couldn't load page", err)
     );
   }
   
-
   return (
     <ContainerGradiente>
       <StatusBar
         backgroundColor="transparent"
         translucent={true}
-        barStyle="light-content"
+        barStyle="dark-content"
       />
       <ContainerScrollView>
         {isLoadingRedes && 
@@ -169,20 +169,16 @@ const Home = () => {
             keyExtractor={(item) => String(item.id)}
             data={bannerSuperior}
             renderItem={({ item }) => (
-              <BorderlessButton onPress={() => goToLinkBanner(item.url_superior_banner)}>
-                <BannerCredenciamento >
-                  <BannerImage
-                    source={{ uri: item.image_superior_banner}}
-                  resizeMode={"center"}
-                  />
-                </BannerCredenciamento>
+              <BorderlessButton style={{paddingRight: 10}} onPress={() => goToLinkBanner(item.url_superior_banner)}>
+                {console.log(item.image_superior_banner)}
+                <BannerImageBackground resizeMode="strech" source={{uri: item.image_superior_banner}} />
               </BorderlessButton>
             )}
             numColumns={1}
             //keyExtractor={(item, index) => index}
             />
         }
-        <RowIcon>
+        {/* <RowIcon>
           <BoxIcon
             onPress={goToProtocoloSeguranca}
             activeOpacity={0.7}
@@ -190,7 +186,7 @@ const Home = () => {
             <Icon name={"masks"} size={20} color="#ffffff" />
             <BoxText>Protocolo de Seguranças</BoxText>
           </BoxIcon>
-        </RowIcon>
+        </RowIcon> */}
         <RowIcon>
           <BoxIcon
             onPress={() =>
@@ -252,7 +248,6 @@ const Home = () => {
         </BoxEMerkatorTalks> */}
   
         {isLoadingRedes &&
-            
             <FlatList
             keyExtractor={(item) => String(item.id)}
             data={banner}

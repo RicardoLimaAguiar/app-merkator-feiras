@@ -267,10 +267,10 @@ const ExhibitorDetail = () => {
                   {dataOrder._embedded.cliente.nome}
                 </TitleExhibitor>
                 <ContainerDescription>
-                  CNPJ: {dataOrder._embedded.cliente.cnpj}{'\n'}
+                  {/* CNPJ: {dataOrder._embedded.cliente.cnpj}{'\n'}
                   Fone: {dataOrder._embedded.cliente.fone1}{'\n'}
                   {dataOrder._embedded.cliente.cidade} - {" "}
-                  {dataOrder._embedded.cliente.estado}
+                  {dataOrder._embedded.cliente.estado} */}
                 </ContainerDescription>
                 <SectionTitle>Produtos:</SectionTitle>
                 <ContainerProduto>
@@ -292,7 +292,7 @@ const ExhibitorDetail = () => {
                     style={{ alignItems: "flex-start" }}
                   />
                 )}
-                {loadingContact &&
+                {/* {loadingContact &&
                   contact.map((value) => (
                     <>
                       <SectionTitle>Contato:</SectionTitle>
@@ -307,7 +307,7 @@ const ExhibitorDetail = () => {
                         </TextFone>
                       </BoxFones>
                     </>
-                  ))}
+                  ))} */}
                 <ButtonTraslado>
                   <TextButtonTraslado>{dataOrder._embedded.pavilhao.nome}</TextButtonTraslado>
                 </ButtonTraslado>
