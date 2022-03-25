@@ -4,7 +4,7 @@ export const Container = styled.TouchableOpacity.attrs((props) => ({
   activeOpacity: 0.7,
 }))`
   padding: 10px;
-  background: #fff;
+  background: ${({theme}) => theme.colors.secondary};
   margin-bottom: 14px;
   border-radius: 8px;
   margin-right: 20px;
@@ -28,7 +28,7 @@ export const BoxLocal = styled.View`
 
 export const Name = styled.Text`
   font-size: 20px;
-  color: #1c1c1c;
+  color: ${({theme}) => theme.colors.borderBotaoEMerkator};
   padding-bottom: 0px;
   font-family: ${({ theme }) => theme.fonts.roboto700};
 `;
@@ -36,7 +36,7 @@ export const Name = styled.Text`
 export const Description = styled.Text.attrs({
   numberOfLines: 2,
 })`
-  color: #666;
+  color: ${({theme}) => theme.colors.borderBotaoEMerkator};
   margin-top: 5px;
   line-height: 20px;
   font-size: 13px;
@@ -54,21 +54,21 @@ export const Address = styled.View`
 
 export const Rua = styled.Text`
   font-size: 12px;
-  color: #666;
+  color: ${({theme}) => theme.colors.borderBotaoEMerkator};
   font-family: ${({ theme }) => theme.fonts.roboto400};
   margin-left: 30px;
 `;
 
 export const Pavilhao = styled.Text`
   font-size: 12px;
-  color: #666;
+  color: ${({theme}) => theme.colors.borderBotaoEMerkator};
   font-family: ${({ theme }) => theme.fonts.roboto400};
   margin-right: 30px;
 `;
 
 export const Corredor = styled.Text`
   font-size: 12px;
-  color: #666;
+  color: ${({theme}) => theme.colors.borderBotaoEMerkator};
 `;
 
 export const Stats = styled.View`

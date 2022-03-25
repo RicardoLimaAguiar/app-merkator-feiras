@@ -4,7 +4,7 @@ export const Container = styled.TouchableOpacity.attrs((props) => ({
   activeOpacity: 0.7,
 }))`
   padding: 10px;
-  background: #fff;
+  background: ${({theme}) => theme.colors.primary};
   margin-bottom: 14px;
   border-radius: 8px;
   margin-right: 20px;
@@ -21,14 +21,14 @@ export const BoxName = styled.View`
 `;
 
 export const BoxLocal = styled.View`
-  color: #a0a4b4;
+  color: ${({theme}) => theme.colors.borderBotaoEMerkator};
   font-size: 12px;
   flex-direction: row;
 `;
 
 export const Name = styled.Text`
   font-size: 20px;
-  color: #1c1c1c;
+  color: ${({theme}) => theme.colors.borderBotaoEMerkator};
   font-weight: 700;
   padding-bottom: 5px;
   font-family: "Roboto";
@@ -54,14 +54,14 @@ export const Address = styled.View`
 
 export const Rua = styled.Text`
   font-size: 12px;
-  color: #666;
+  color: ${({theme}) => theme.colors.borderBotaoEMerkator};
   font-family: "Roboto";
   margin-right: 30px;
 `;
 
 export const Corredor = styled.Text`
   font-size: 12px;
-  color: #666;
+  color: ${({theme}) => theme.colors.borderBotaoEMerkator};
 `;
 
 export const Stats = styled.View`

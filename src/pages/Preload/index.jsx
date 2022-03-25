@@ -5,6 +5,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import {
   ContainerGradiente,
+  ContainerGradientePreload,
   IconPreload,
   ContainerCenter,
   TextWhite,
@@ -46,7 +47,7 @@ const Preload = () => {
     });
   }
   return (
-    <ContainerGradiente>
+    <ContainerGradientePreload>
       <StatusBar
         backgroundColor="transparent"
         translucent={true}
@@ -58,7 +59,7 @@ const Preload = () => {
         />
         <TextWhite>Buscando informações</TextWhite>
       </ContainerCenter>
-    </ContainerGradiente>
+    </ContainerGradientePreload>
   );
 };
 

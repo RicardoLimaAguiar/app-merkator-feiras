@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const Container = styled.View`
   flex: 1;
-  margin: 30px 3px 10px 3px;
+  margin: 0px 3px 10px 3px;
   padding: 10px 0 5px;
   border-radius: 3px;
   /* background-color: ${({ theme }) => theme.colors.gradient.first}; */

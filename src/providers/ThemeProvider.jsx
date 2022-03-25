@@ -1,10 +1,10 @@
 import React from "react";
 import { ThemeProvider as ScThemeProvider } from "styled-components";
-import zeroGrauTheme from "../assets/styles/themes/zeroGrau";
+import themeEvent from "../assets/styles/themes/sicc";
 import Background from "../components/Background";
 
 const ThemeProvider = ({ children, ...props }) => {
-  const theme = zeroGrauTheme;
+  const theme = themeEvent;
 
   return (
     
