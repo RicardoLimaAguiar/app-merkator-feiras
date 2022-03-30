@@ -1,8 +1,12 @@
 import React from 'react';
 import { Image, StyleSheet } from 'react-native';
+import coreTools from '../../services/coreTools';
 import { Container, ContainerNews, BoxImageNews, BoxNews, TitleNews } from './styles';
 
 export function ListNews({ data, goToNewsDetail }) {
+
+  const { switchSizeImage } = coreTools();
+
   return (
     <Container onPress={goToNewsDetail}>
       <ContainerNews>
@@ -10,7 +14,7 @@ export function ListNews({ data, goToNewsDetail }) {
           <Image
             style={{maxWidth: 70, minHeight: 70}}
             source={{
-              uri: data.image,
+              uri: switchSizeImage(data.image, 'sm'),
             }}
           />
         </BoxImageNews>

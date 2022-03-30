@@ -5,6 +5,7 @@ import {parseISO, format} from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import {decode} from 'html-entities';
 
+import coreTools from '../../services/coreTools';
 import { HeaderApp } from "../../components/HeaderApp";
 import ShareNews from './ShareNews';
 
@@ -24,6 +25,8 @@ export default function NewsDetail() {
   const route = useRoute();
   const [post, setPost] = useState(route.params.data);
   const [dateNews, setDateNews] = useState(parseISO(route.params.data.data_pub.date));
+  const { switchSizeImage } = coreTools();
+
   const linkNews = useMemo(() => {
     const linkSicc = 'https://www.sicc.com.br/pt/noticias/';
     const idSicc = 1;
@@ -58,7 +61,7 @@ export default function NewsDetail() {
           <BoxImageNews>
             <ImageNews 
               source={{
-                uri: post.image,
+                uri: switchSizeImage(post.image, 'lg'),
               }}
             />
           </BoxImageNews>

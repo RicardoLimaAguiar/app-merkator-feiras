@@ -30,7 +30,7 @@ export const BoxImageNews = styled.View`
   margin-right: 10px;
   overflow: hidden;
   border-radius: 31px;
-  border-width: 0.5;
+  border-width: 0.5px;
   border-color: ${({ theme }) => theme.colors.borderBotaoEMerkator};
   background: ${({ theme }) => theme.colors.borderBotaoEMerkator};
 `;

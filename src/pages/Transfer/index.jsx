@@ -75,7 +75,7 @@ const Transfer = () => {
           </ImageTransporteOficial>
           
           <ButtonDestaqueTraslado onPress={() => handlePurchaseTicket()}>
-            <TextButtonTraslado>Compre sua pasagem aqui</TextButtonTraslado>
+            <TextButtonTraslado>Compre sua passagem aqui</TextButtonTraslado>
           </ButtonDestaqueTraslado>
 
           <TitleSectionTraslado>
@@ -177,7 +177,7 @@ const Transfer = () => {
           </ButtonTraslado> */}
 
           <ButtonDestaqueTraslado onPress={() => handlePurchaseTicket()}>
-            <TextButtonTraslado>Compre sua pasagem aqui</TextButtonTraslado>
+            <TextButtonTraslado>Compre sua passagem aqui</TextButtonTraslado>
           </ButtonDestaqueTraslado>
         </ContainerTextBgWhite>
       </ContainerScrollView>

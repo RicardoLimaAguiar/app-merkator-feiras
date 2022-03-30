@@ -70,7 +70,7 @@ export const BannerImage = styled.Image`
 export const BannerImageBackground = styled.ImageBackground`
   flex: 1;
   width: 100%;
-  height: 100px;
+  height: 90px;
   margin-bottom: 15px;
   margin-left: 5px;
   margin-right: 20px;
@@ -510,6 +510,7 @@ export const BoxImageNews = styled.View`
   border-top-right-radius: 8px;
   justify-content: center;
   align-items: center;
+  background-color: rgba(41, 41, 41, 0.1);
 `;
 
 export const ImageNews = styled.Image`

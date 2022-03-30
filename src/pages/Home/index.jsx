@@ -156,6 +156,7 @@ const Home = () => {
 
         {config.image_evento && 
         <BannerCredenciamento>
+          {console.log(config.image_evento)}
         <BannerImage
           source={{
             uri: config.image_evento,
@@ -170,8 +171,7 @@ const Home = () => {
             data={bannerSuperior}
             renderItem={({ item }) => (
               <BorderlessButton style={{paddingRight: 10}} onPress={() => goToLinkBanner(item.url_superior_banner)}>
-                {console.log(item.image_superior_banner)}
-                <BannerImageBackground resizeMode="strech" source={{uri: item.image_superior_banner}} />
+                <BannerImageBackground resizeMode="stretch" source={{uri: item.image_superior_banner}} />
               </BorderlessButton>
             )}
             numColumns={1}
