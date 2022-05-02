@@ -5348,6 +5348,13 @@ react-native-onesignal@^4.3.1:
   dependencies:
     invariant "^2.2.2"
 
+react-native-onesignal@^4.3.8:
+  version "4.3.8"
+  resolved "https://registry.yarnpkg.com/react-native-onesignal/-/react-native-onesignal-4.3.8.tgz#d54161cb55f23425531072750be3854a714cf808"
+  integrity sha512-+Zx0kZ+uYWs/zjPUbZe+ozYFpeajSXCu/3zmfht4AdFsD31wLxJ20p9DOELQFTklc9X3T4BgZ+XtB2CIgMYVJQ==
+  dependencies:
+    invariant "^2.2.2"
+
 react-native-reanimated@~2.2.0:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-2.2.4.tgz#36c5d15028b0bd7d479fba5199117ac870c7a532"
