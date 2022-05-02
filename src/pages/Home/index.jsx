@@ -156,7 +156,6 @@ const Home = () => {
 
         {config.image_evento && 
         <BannerCredenciamento>
-          {console.log(config.image_evento)}
         <BannerImage
           source={{
             uri: config.image_evento,
@@ -171,7 +170,7 @@ const Home = () => {
             data={bannerSuperior}
             renderItem={({ item }) => (
               <BorderlessButton style={{paddingRight: 10}} onPress={() => goToLinkBanner(item.url_superior_banner)}>
-                <BannerImageBackground resizeMode="stretch" source={{uri: item.image_superior_banner}} />
+                <BannerImageBackground resizeMode="cover" source={{uri: item.image_superior_banner}} />
               </BorderlessButton>
             )}
             numColumns={1}
@@ -232,6 +231,12 @@ const Home = () => {
           </BoxIcon>
         </RowIcon>
         <RowIcon>
+          <BoxIcon onPress={() => navigation.navigate("EmerkatorTalks", {
+            evento: 37,
+          })} activeOpacity={0.7}>
+            <FontIcon name={"bullhorn"} size={20} color="#ffffff" />
+            <BoxText>eMerkator Talks</BoxText>
+          </BoxIcon>
           <BoxIcon
             onPress={goToPlantaBaixa}
             activeOpacity={0.7}
@@ -240,7 +245,6 @@ const Home = () => {
             <BoxText>Planta Baixa</BoxText>
           </BoxIcon>
         </RowIcon>
-        
         {/* <BoxEMerkatorTalks>
           <BorderlessButton onPress={() => goToLinkBanner('https://emerkator.com.br/')}>
             <ImageEmerkatorTalks source={{uri: config.image_topo_banner}} />

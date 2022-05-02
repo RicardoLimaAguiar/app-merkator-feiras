@@ -164,7 +164,7 @@ export const ButtonContainer = styled.TouchableOpacity.attrs((props) => ({
 
 export const ButtonShare = styled(ButtonContainer)`
   border-radius: 5px;
-  background-color: ${({ theme }) => theme.colors.gradient.first};
+  background-color: ${({ theme }) => theme.colors.primary};
   padding: 5px;
 `;
 
@@ -544,7 +544,7 @@ export const BoxDateNews = styled.Text`
   font-size: 12px;
   margin: 20px 0;
   font-family: ${({ theme }) => theme.fonts.roboto700};
-  color: #A0A4B4;
+  color: ${({ theme }) => theme.colors.secondary};
   text-transform: uppercase;
 `;
 

@@ -15,6 +15,8 @@ import PageFavoritres from "./pages/Favorites";
 import PageNotesExhibitor from "./pages/NotesExhibitor";
 import PageNewsDetail from "./pages/NewsDetails";
 import PageNews from "./pages/News";
+import PageEmerkatorTalks from "./pages/EMerkatorTalks"
+import PageEmerkatorTalksDetail from "./pages/EmerkatorTalksDetail"
 
 const Routes = ({ theme, ...props }) => (
   <MainStack.Navigator
@@ -119,6 +121,20 @@ const Routes = ({ theme, ...props }) => (
     <MainStack.Screen
       name="NotesExhibitor"
       component={PageNotesExhibitor}
+      options={{
+        headerShown: false,
+      }}
+    />
+    <MainStack.Screen
+      name="EmerkatorTalks"
+      component={PageEmerkatorTalks}
+      options={{
+        headerShown: false,
+      }}
+    />
+    <MainStack.Screen
+      name="EmerkatorTalksDetail"
+      component={PageEmerkatorTalksDetail}
       options={{
         headerShown: false,
       }}

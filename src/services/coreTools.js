@@ -9,7 +9,13 @@ const coreTools = () =>{
     );
   });
 
-  return { switchSizeImage }
+  const convertToSlug = useCallback((Text) => {
+    return Text.toLowerCase()
+      .replace(/ /g, '-')
+      .replace(/[^\w-]+/g, '');
+  });
+
+  return { switchSizeImage, convertToSlug }
 
 }
 
