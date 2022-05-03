@@ -9,6 +9,7 @@ import {
   BoxImageNews,
   BoxNews, 
   TitleNews, 
+  SubTitleNews,
   BoxDateSchedule, 
   BoxDaySchedule, 
   BoxMounthSchedule 
@@ -17,8 +18,6 @@ import {
 export function ListSchedule({ data, goToScheduleDetail }) {
 
   const dateSchedule = parseISO(data.data_ini.date);
-
-  {console.log(dateSchedule)}
 
   return (
     <Container onPress={goToScheduleDetail}>
@@ -39,6 +38,9 @@ export function ListSchedule({ data, goToScheduleDetail }) {
         </BoxDateSchedule>
         <BoxNews>
           <TitleNews numberOfLines={3}>{data.nome}</TitleNews>
+          {data.local &&
+            <SubTitleNews numberOfLines={3}>{data.local}</SubTitleNews>
+          }
         </BoxNews>
         <BoxImageNews>
           <Image

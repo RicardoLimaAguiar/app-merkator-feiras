@@ -540,9 +540,14 @@ export const TitleNews = styled.Text`
   line-height: 30px;
 `;
 
+export const BoxScheduleLocalHour = styled.View`
+  display: flex;
+  flex-direction: row;
+`
+
 export const BoxDateNews = styled.Text`
   font-size: 12px;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
   font-family: ${({ theme }) => theme.fonts.roboto700};
   color: ${({ theme }) => theme.colors.secondary};
   text-transform: uppercase;

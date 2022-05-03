@@ -29,7 +29,6 @@ const EmerkatorTalks = () => {
 
   const fecthAllSchedule = async () => {
     await api.get(`programacaoevento?evento=${evento}&page=${page}`).then((response) => {
-      console.log(response.data._embedded.programacao_evento);
       setScheduleRepository(response.data._embedded.programacao_evento);
       setPageCount(response.data.page_count);
       setIsLoadnig(true);

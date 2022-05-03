@@ -46,6 +46,8 @@ export const BoxImageNews = styled.View`
 
 export const BoxNews = styled.View`
   flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 export const TitleNews = styled.Text`
@@ -54,6 +56,14 @@ export const TitleNews = styled.Text`
   color: ${({ theme }) => theme.colors.textInBg};
   padding-right: 10px;
   font-weight: bold;
+`;
+
+export const SubTitleNews = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.roboto700};
+  font-size: 10px;
+  color: ${({ theme }) => theme.colors.textInBg};
+  padding-right: 10px;
+  margin-top: 5px;
 `;
 
 export const Container = styled.TouchableOpacity.attrs((props) => ({

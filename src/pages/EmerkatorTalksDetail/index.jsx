@@ -67,9 +67,14 @@ export default function ScheduleDetail() {
           </BoxImageNews>
           <BoxContentNews>
             <TitleNews>{schedule.nome}</TitleNews>
+            {schedule.local && 
+            <BoxDateNews>
+              Local: {schedule.local}
+            </BoxDateNews>
+            }
             <BoxDateNews>
               Horário: {format(dateSchedule, 'dd MMMM yyyy HH:mm', {
-                locale: ptBR,
+                locale:  ptBR,
                 timeZone: 'America/Sao_Paulo',
               })}
             </BoxDateNews>
