@@ -4,7 +4,7 @@
     "slug": "app-merkator-feiras",
     "description": "Aplicativo Merkator Feiras SICC 2022 / 30-03-2022",
     "owner": "ricardoaguiar",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "extra": {
@@ -32,7 +32,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "org.reactjs.native.example.AppRealmDb",
-      "buildNumber": "18"
+      "buildNumber": "19"
     },
     "android": {
       "adaptiveIcon": {
