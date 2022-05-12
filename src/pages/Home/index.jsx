@@ -137,7 +137,7 @@ const Home = () => {
   }
 
   const goToPlantaBaixa = () => {
-    Linking.openURL("http://paineldoexpositor.com.br/uploads/media/media_623a4636422de5_28933725.pdf").catch((err) =>
+    Linking.openURL("http://paineldoexpositor.com.br/uploads/media/media_627abe40f38521_46608704.pdf").catch((err) =>
       console.error("Couldn't load page", err)
     );
   }
