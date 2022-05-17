@@ -125,7 +125,7 @@ const Home = () => {
   };
 
   const goToHospedagem = () => {
-    Linking.openURL("https://merkatorhospedagem.bcseventos.inf.br/hospedagem/solicitacaoweb/login.php?id_edicao=28").catch(
+    Linking.openURL("http://paineldoexpositor.com.br/uploads/media/media_628396ce8d58d0_74457586.pdf").catch(
       (err) => console.error("Couldn't load page", err)
     );
   };
@@ -213,7 +213,7 @@ const Home = () => {
         <RowIcon>
           <BoxIcon onPress={goToHospedagem}>
             <FontIcon name={'building'} size={20} color="#ffffff" />
-            <BoxText>Hospedagem</BoxText>
+            <BoxText>Traslado para hotel</BoxText>
           </BoxIcon>
           <BoxIcon onPress={goToCredenciamento}>
             <FontIcon name={'user-tag'} size={20} color="#ffffff" />
