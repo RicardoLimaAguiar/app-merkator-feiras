@@ -82,6 +82,7 @@ const Exhibitor = () => {
         barStyle="dark-content"
       />
       <HeaderApp showButtons={true} />
+      {isLoading && (
       <FormSearch>
         <InputSearch
           onChangeText={searchFilterFunction}
@@ -91,6 +92,7 @@ const Exhibitor = () => {
           clearButtonMode="always"
         />
       </FormSearch>
+      )}
       <ContainerView>
         {!isLoading && <LoadingActivityIndicator />}
         {isLoading && (

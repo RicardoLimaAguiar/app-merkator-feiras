@@ -53,22 +53,22 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MerkatorFeiraseEventos/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MerkatorFeiraseEventos/main.m; sourceTree = "<group>"; };
 		1A6FE0CF4C6FD045E04B8F52 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		1B5FF281B9AC45CDB1B85567 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = OneSignalNotificationServiceExtension.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		1B5FF281B9AC45CDB1B85567 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		4D2378F89CD44AA68D3BFF82 /* MerkatorFeiraseEventos-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "MerkatorFeiraseEventos-Bridging-Header.h"; path = "MerkatorFeiraseEventos/MerkatorFeiraseEventos-Bridging-Header.h"; sourceTree = "<group>"; };
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-MerkatorFeiraseEventos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MerkatorFeiraseEventos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2E3173556A471DD304B334 /* Pods-MerkatorFeiraseEventos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MerkatorFeiraseEventos.debug.xcconfig"; path = "Target Support Files/Pods-MerkatorFeiraseEventos/Pods-MerkatorFeiraseEventos.debug.xcconfig"; sourceTree = "<group>"; };
 		7120B9A44E0218B9CCBFD11B /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
-		764D1749D94B4084BF38183C /* NotificationService.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = NotificationService.h; path = NotificationService.h; sourceTree = "<group>"; };
+		764D1749D94B4084BF38183C /* NotificationService.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-MerkatorFeiraseEventos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MerkatorFeiraseEventos.release.xcconfig"; path = "Target Support Files/Pods-MerkatorFeiraseEventos/Pods-MerkatorFeiraseEventos.release.xcconfig"; sourceTree = "<group>"; };
 		A5088976877B493286443554 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "MerkatorFeiraseEventos/noop-file.swift"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = MerkatorFeiraseEventos/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		CA773DEFB7C147BA941313D6 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = undefined; name = OneSignalNotificationServiceExtension.appex; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		E641A74458C847BEB3015EE9 /* NotificationService.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = NotificationService.m; path = NotificationService.m; sourceTree = "<group>"; };
+		CA773DEFB7C147BA941313D6 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; fileEncoding = 9; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E641A74458C847BEB3015EE9 /* NotificationService.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
 		E701A8B7B1099B25F69F4FC5 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-MerkatorFeiraseEventos/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		FD313873D14D4A7D87AFD897 /* OneSignalNotificationServiceExtension-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "OneSignalNotificationServiceExtension-Info.plist"; path = "OneSignalNotificationServiceExtension-Info.plist"; sourceTree = "<group>"; };
+		FD313873D14D4A7D87AFD897 /* OneSignalNotificationServiceExtension-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; path = "OneSignalNotificationServiceExtension-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +166,6 @@
 				1B5FF281B9AC45CDB1B85567 /* OneSignalNotificationServiceExtension.entitlements */,
 				FD313873D14D4A7D87AFD897 /* OneSignalNotificationServiceExtension-Info.plist */,
 			);
-			name = OneSignalNotificationServiceExtension;
 			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
@@ -184,7 +183,6 @@
 			children = (
 				6C2E3173556A471DD304B334 /* Pods-MerkatorFeiraseEventos.debug.xcconfig */,
 				7A4D352CD337FB3A3BF06240 /* Pods-MerkatorFeiraseEventos.release.xcconfig */,
-				A856E64A682045A69DEAEAB9 /* OneSignalNotificationServiceExtension */,
 				1A6FE0CF4C6FD045E04B8F52 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
 				7120B9A44E0218B9CCBFD11B /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
@@ -253,11 +251,12 @@
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = undefined;
+						DevelopmentTeam = 4DTUG4685F;
 						LastSwiftMigration = 1250;
 					};
 					E5930FE9612741B8BFB9C55B = {
-						DevelopmentTeam = undefined;
+						DevelopmentTeam = 4DTUG4685F;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -459,6 +458,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MerkatorFeiraseEventos/MerkatorFeiraseEventos.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DTUG4685F;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -490,6 +490,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MerkatorFeiraseEventos/MerkatorFeiraseEventos.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DTUG4685F;
 				INFOPLIST_FILE = MerkatorFeiraseEventos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -513,7 +514,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = undefined;
+				DEVELOPMENT_TEAM = 4DTUG4685F;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -521,6 +522,7 @@
 				INFOPLIST_FILE = "OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.AppRealmDb.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = OneSignalNotificationServiceExtension;
 				SKIP_INSTALL = YES;
@@ -641,7 +643,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = undefined;
+				DEVELOPMENT_TEAM = 4DTUG4685F;
 				INFOPLIST_FILE = "OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";

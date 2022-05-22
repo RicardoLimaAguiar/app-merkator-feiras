@@ -49,7 +49,7 @@ const Transfer = () => {
 
   function handlePurchaseTicket(){
     Linking.openURL(
-      'https://api.whatsapp.com/send?phone=5551996515213&text=Olá Desejo quero traslado para SICC 2022'
+      'https://loja.planalto.com.br/?categoriaSite=Transfers'
     );
   }
 
@@ -112,7 +112,7 @@ const Transfer = () => {
           <ButtonTraslado>
             <TextButtonTraslado>POA {'>'} GRAMADO</TextButtonTraslado>
           </ButtonTraslado>
-          <SectionTitle>Gramado para Aeroporto Salgado Filho (Embarque na feira).{'\n\n'}10h | 12h | 14h | 16h{'\n\n'}É OBRIGATÓRIO o comparecimento do cliente no estande da Equipe do traslado para confirmar / ou agendar no horário do traslado de Gramado/Canela para Porto Alegre.Para mais informações sobre o traslado e compra antecipada entre em contato pelo número: (51) 99651-5213, Com Catherine.{'\n\n'}* Os horários previstos acima podem sofrer alterações conforme necessidade e demanda.</SectionTitle>
+          <SectionTitle>Gramado para Aeroporto Salgado Filho (Embarque hotéis){'\n\n'}5h{'\n\n'}Gramado para Aeroporto Salgado Filho (Embarque na feira).{'\n\n'}10h | 12h | 14h | 16h{'\n\n'}É OBRIGATÓRIO o comparecimento do cliente no estande da Equipe do traslado para confirmar / ou agendar no horário do traslado de Gramado/Canela para Porto Alegre.Para mais informações sobre o traslado e compra antecipada entre em contato pelo número: (51) 99651-5213, Com Catherine.{'\n\n'}* Os horários previstos acima podem sofrer alterações conforme necessidade e demanda.</SectionTitle>
           <TitleSectionTraslado>
             <TextTitleTraslado>Quinta-feira 26/05</TextTitleTraslado>
           </TitleSectionTraslado>

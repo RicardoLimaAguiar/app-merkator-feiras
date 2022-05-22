@@ -223,7 +223,7 @@ export const InputSearch = styled.TextInput.attrs({
   padding: 12px 15px;
   border-radius: 4px;
   font-size: 16px;
-  color: #000;
+  color: ${({theme}) => theme.colors.borderBotaoEMerkator};
   background: ${({ theme }) => theme.colors.secondary};
   text-transform: capitalize;
   font-family: ${({ theme }) => theme.fonts.roboto400};
@@ -309,7 +309,7 @@ export const ContainerDescription = styled.Text`
 `;
 
 export const SectionTitle = styled.Text`
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.borderBotaoEMerkator};
   justify-content: flex-start;
   margin-bottom: 10px;
   font-size: 14px;

@@ -207,7 +207,7 @@ const Home = () => {
             activeOpacity={0.7}
           >
             <Icon name={"directions-bus"} size={20} color="#ffffff" />
-            <BoxText>Traslado</BoxText>
+            <BoxText>Traslado Aeroporto</BoxText>
           </BoxIcon>
         </RowIcon>
         <RowIcon>

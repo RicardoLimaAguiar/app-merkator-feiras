@@ -99,6 +99,7 @@ const ExhibitorDetail = () => {
     const getContact = await api
       .get(`contatocliente?cliente=${cliente}`)
       .then((result) => {
+        console.log(result.data._embedded.contato_cliente)
         setContact(result.data._embedded.contato_cliente);
         setLoadingContact(true);
       });
@@ -129,8 +130,6 @@ const ExhibitorDetail = () => {
     });
 
     const dataNewFavorite = result?.rows?._array || [];
-
-    console.tron.log(dataNewFavorite);
 
     dataNewFavorite.map((item) => {
       if (item.id === idBooth) {
@@ -267,15 +266,15 @@ const ExhibitorDetail = () => {
                   {dataOrder._embedded.cliente.nome}
                 </TitleExhibitor>
                 <ContainerDescription>
-                  {/* CNPJ: {dataOrder._embedded.cliente.cnpj}{'\n'}
+                  CNPJ: {dataOrder._embedded.cliente.cnpj}{'\n'}
                   Fone: {dataOrder._embedded.cliente.fone1}{'\n'}
                   {dataOrder._embedded.cliente.cidade} - {" "}
-                  {dataOrder._embedded.cliente.estado} */}
+                  {dataOrder._embedded.cliente.estado}
                 </ContainerDescription>
                 <SectionTitle>Produtos:</SectionTitle>
                 <ContainerProduto>
                   {!loadingClient && (
-                    <ActivityIndicator size="small" color="#000000" />
+                    <ActivityIndicator size="small" color="#FFFFFF" />
                   )}
                   {loadingClient &&
                     productClient.map((value) => (
@@ -288,11 +287,11 @@ const ExhibitorDetail = () => {
                 {!loadingContact && (
                   <ActivityIndicator
                     size="small"
-                    color="#000000"
+                    color="#FFFFFF"
                     style={{ alignItems: "flex-start" }}
                   />
                 )}
-                {/* {loadingContact &&
+                {loadingContact &&
                   contact.map((value) => (
                     <>
                       <SectionTitle>Contato:</SectionTitle>
@@ -307,7 +306,7 @@ const ExhibitorDetail = () => {
                         </TextFone>
                       </BoxFones>
                     </>
-                  ))} */}
+                  ))}
                 <ButtonTraslado>
                   <TextButtonTraslado>{dataOrder._embedded.pavilhao.nome}</TextButtonTraslado>
                 </ButtonTraslado>

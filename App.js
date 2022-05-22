@@ -16,12 +16,13 @@ if (__DEV__) {
 
 import Routes from "./src/routes";
 import ThemeProvider from "./src/providers/ThemeProvider";
-import OneSignal from 'react-native-onesignal';
-import Constants from "expo-constants";
+// import { OneSignalProvider } from './src/providers/OneSignalProvider';
+// import OneSignal from 'react-native-onesignal';
+// import Constants from "expo-constants";
 
 
 function App() {
-  OneSignal.setAppId(Constants.manifest.extra.oneSignalAppId);
+  // OneSignal.setAppId(Constants.manifest.extra.oneSignalAppId);
   
   useEffect(() => {
     async function updateApp(){

@@ -78,8 +78,8 @@ export default function ScheduleDetail() {
                 timeZone: 'America/Sao_Paulo',
               })}
             </BoxDateNews>
-            <ShareNews title={schedule.nome} link={linkNews} />
             <TextContentNews>{ decode(schedule.descricao.replace(/(<([^>]+)>)/gi, ""), {level: 'html5'})}</TextContentNews>
+            <ShareNews title={schedule.nome} link={linkNews} />  
           </BoxContentNews>
         </ContainterNewsDetalhe>
         </ScrollView>

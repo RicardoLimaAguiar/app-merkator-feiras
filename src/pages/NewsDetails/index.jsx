@@ -73,8 +73,8 @@ export default function NewsDetail() {
                 timeZone: 'America/Sao_Paulo',
               })}
             </BoxDateNews>
-            <ShareNews title={post.title} link={linkNews} />
             <TextContentNews>{ decode(post.content.replace(/(<([^>]+)>)/gi, ""), {level: 'html5'})}</TextContentNews>
+            <ShareNews title={post.title} link={linkNews} />
           </BoxContentNews>
         </ContainterNewsDetalhe>
         </ScrollView>
